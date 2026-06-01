@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional AI automation, software development, web design, IT support, and device sales by NKRAN DIGITAL HUB in Ghana.">
+  <meta name="keywords" content="NKRAN DIGITAL HUB, AI automation Ghana, software development, web design Tema, laptop sales, phone repairs, IT support">
+  <meta name="author" content="NKRAN DIGITAL HUB">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Services | NKRAN DIGITAL HUB">
+  <meta property="og:description" content="End-to-end digital solutions engineered for performance, security, and exponential growth across Ghana.">
+  <meta property="og:image" content="/images/og-services.jpg">
+  <meta property="og:url" content="https://nkrandigitalhub.com/services.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Services | NKRAN DIGITAL HUB">
+  <meta name="twitter:description" content="Smart Tech, Real Solutions for Ghanaian Businesses & Schools">
+  <meta name="twitter:image" content="/images/twitter-services.jpg">
+
+  <title>Services | NKRAN DIGITAL HUB</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/mkranDigilogo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/css/services.css">
+
+  <!-- Structured Data (ProfessionalService) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "NKRAN DIGITAL HUB",
+    "image": "/images/mkranDigilogo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tema",
+      "addressCountry": "GH"
+    },
+    "telephone": "+233245317741",
+    "url": "https://nkrandigitalhub.com/services.html",
+    "description": "Professional AI automation, custom software, web design, IT support, and tech device sales in Ghana."
+  }
+  </script>
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <img src="/images/mkranDigilogo.png" alt="NKRAN Logo" width="60" height="60">
+        <h2>NKRAN <br> DIGITAL HUB</h2>
+      </div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="NKRAN DIGITAL HUB Home">
+      <img src="/images/mkranDigilogo.png" alt="NKRAN Logo" width="40" height="40">
+      <div class="logo-text">
+        <span class="logo-nkran">NKRAN</span>
+        <span class="logo-digital">DIGITAL HUB</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link active" aria-current="page">Services</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Our <span>Services</span></h1>
+        <p class="page-hero-subtitle">End-to-end digital solutions engineered for performance, security, and exponential growth across Ghana.</p>
+      </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="container section-pad" style="padding-bottom: 2rem;">
+      <div class="service-filters animate-on-scroll">
+        <button class="filter-btn active" data-filter="all">All Services</button>
+        <button class="filter-btn" data-filter="ai-software">AI & Software</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="hardware">Hardware Sales</button>
+        <button class="filter-btn" data-filter="support">IT Support</button>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="container section-pad">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">What We <span>Offer</span></h2>
+        <p class="section-subtitle">Comprehensive digital and hardware services engineered for performance, security, and growth.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: AI Automation (FIRST) -->
+        <div class="service-card animate-on-scroll" data-category="ai-software">
+          <div class="service-icon">🤖</div>
+          <h3>AI & Process Automation</h3>
+          <p>Intelligent automation for Email, WhatsApp, and Customer Support. We deploy AI chatbots and workflow automations that eliminate manual bottlenecks and operate 24/7.</p>
+          <ul class="service-features">
+            <li>WhatsApp & Email Auto-responders</li>
+            <li>AI Customer Support Chatbots</li>
+            <li>Workflow & Data Entry Automation</li>
+            <li>Seamless CRM Integration</li>
+          </ul>
+          <span class="service-tag">AI-Powered</span>
+        </div>
+
+        <!-- Service 2: Business Software -->
+        <div class="service-card animate-on-scroll" data-category="ai-software">
+          <div class="service-icon">💼</div>
+          <h3>Business & School Software</h3>
+          <p>Custom ERP, Learning Management Systems (LMS), attendance trackers, grading platforms, and inventory control systems tailored to your exact operational workflow.</p>
+          <ul class="service-features">
+            <li>Custom Software Development</li>
+            <li>Secure Cloud Integration</li>
+            <li>Mobile-Responsive Dashboards</li>
+            <li>Role-Based Access Control</li>
+          </ul>
+          <span class="service-tag">Most Popular</span>
+        </div>
+
+        <!-- Service 3: Web Development -->
+        <div class="service-card animate-on-scroll" data-category="web">
+          <div class="service-icon">🌐</div>
+          <h3>Website Design & Development</h3>
+          <p>SEO-optimized, mobile-responsive websites with blazing-fast load times, secure hosting, and conversion-focused UI/UX design that turns visitors into customers.</p>
+          <ul class="service-features">
+            <li>Modern UI/UX Design</li>
+            <li>Advanced SEO Optimization</li>
+            <li>Fast & Secure Hosting</li>
+            <li>SSL & Security Hardening</li>
+          </ul>
+          <span class="service-tag">Starter Friendly</span>
+        </div>
+
+        <!-- Service 4: Laptop Sales -->
+        <div class="service-card animate-on-scroll" data-category="hardware">
+          <div class="service-icon">💻</div>
+          <h3>Laptop Sales & Accessories</h3>
+          <p>High-performance laptops, monitors, peripherals, and networking gear from trusted manufacturers. We provide expert setup and comprehensive warranty support.</p>
+          <ul class="service-features">
+            <li>100% Genuine Products</li>
+            <li>Manufacturer Warranty Included</li>
+            <li>Expert Configuration & Setup</li>
+            <li>Flexible Trade-in Options</li>
+          </ul>
+          <span class="service-tag">In Stock</span>
+        </div>
+
+        <!-- Service 5: Phone Sales & Repairs -->
+        <div class="service-card animate-on-scroll" data-category="hardware">
+          <div class="service-icon">📱</div>
+          <h3>Phone Sales & Repairs</h3>
+          <p>Premium smartphone sales alongside expert repair services. From screen replacements and battery upgrades to software flashing and water damage recovery.</p>
+          <ul class="service-features">
+            <li>Original Replacement Parts</li>
+            <li>Screen & Battery Replacement</li>
+            <li>Software Flashing & Unlocking</li>
+            <li>Quick Turnaround Time</li>
+          </ul>
+          <span class="service-tag">Expert Technicians</span>
+        </div>
+
+        <!-- Service 6: IT Support -->
+        <div class="service-card animate-on-scroll" data-category="support">
+          <div class="service-icon">🔧</div>
+          <h3>IT Support & Digital Setup</h3>
+          <p>Remote and on-site technical assistance, network configuration, cybersecurity setup, cloud migration, and end-to-end tech onboarding for your team.</p>
+          <ul class="service-features">
+            <li>24/7 Remote Assistance</li>
+            <li>Preventive Maintenance</li>
+            <li>Cloud Migration Expertise</li>
+            <li>Staff Training & Onboarding</li>
+          </ul>
+          <span class="service-tag">Always Available</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section section-pad">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">How We <span>Work</span></h2>
+        <p class="section-subtitle">A streamlined process designed for clarity, speed, and exceptional results.</p>
+      </div>
+      <div class="features-grid">
+        <div class="process-card animate-on-scroll">
+          <span class="process-icon">💬</span>
+          <h4>1. Consult</h4>
+          <p>We listen to your goals, challenges, and vision to understand exactly what you need.</p>
+        </div>
+        <div class="process-card animate-on-scroll">
+          <span class="process-icon">📋</span>
+          <h4>2. Plan</h4>
+          <p>Our experts design a tailored solution roadmap with clear timelines and milestones.</p>
+        </div>
+        <div class="process-card animate-on-scroll">
+          <span class="process-icon">⚙️</span>
+          <h4>3. Build</h4>
+          <p>Agile development with regular updates, rigorous testing, and your feedback at every stage.</p>
+        </div>
+        <div class="process-card animate-on-scroll">
+          <span class="process-icon">🚀</span>
+          <h4>4. Launch & Support</h4>
+          <p>Seamless deployment with documentation, team training, and ongoing maintenance support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta section-pad animate-on-scroll">
+      <h2>Need a Custom Solution?</h2>
+      <p>Tell us your unique challenge. We'll engineer the perfect digital or hardware fix tailored to your business needs.</p>
+      <a href="contact.html" class="btn btn-primary">Request a Free Quote</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <!-- Column 1: Brand + Social -->
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="/images/mkranDigilogo.png" alt="NKRAN Logo" width="50" height="50">
+          <h4>NKRAN DIGITAL HUB</h4>
+        </div>
+        <p>Empowering businesses and individuals with next-generation digital solutions that drive growth, efficiency, and innovation across Ghana.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://web.facebook.com/profile.php?id=61589945770443" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="contact-list">
+          <li>
+            <span class="icon">📍</span>
+            <span class="text">Tema, Ghana</span>
+          </li>
+          <li>
+            <span class="icon">📧</span>
+            <a href="mailto:info@nkrandigitalhub.com" class="text">info@nkrandigitalhub.com</a>
+          </li>
+          <li>
+            <span class="icon">📞</span>
+            <div class="text">
+              <a href="tel:+233245317741">+233 24 531 7741</a><br>
+              <a href="tel:+233542666327">+233 54 266 6327</a><br>
+              <a href="tel:+233500704988">+233 50 070 4988</a>
+            </div>
+          </li>
+          <li>
+            <span class="icon">🕒</span>
+            <span class="text">Mon - Sat: 9AM - 6PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">&copy; <span id="year">2026</span> NKRAN DIGITAL HUB. All rights reserved.</div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/233245317741" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="/js/particles.min.js"></script>
+  <script src="/js/services.js"></script>
+
+  <!-- Inline critical JS for loader & year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loader').classList.add('hidden');
+      }, 1800);
+    });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+        menuToggle.setAttribute('aria-expanded', !expanded);
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+      });
+    }
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navMenu.classList.contains('active')) {
+          menuToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
