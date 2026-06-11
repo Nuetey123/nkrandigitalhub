@@ -35,6 +35,9 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="css/about.css">
 
+  <!-- ✅ Particles.js Library - Load ONCE in head -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   <!-- Structured Data (LocalBusiness) -->
   <script type="application/ld+json">
   {
@@ -68,7 +71,7 @@
   <!-- Scroll Progress Bar -->
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-  <!-- Particle Background Canvas -->
+  <!-- ✅ Particle Background Canvas - ONLY ONE -->
   <canvas id="particles-canvas" aria-hidden="true"></canvas>
 
   <!-- Skip Link for Accessibility -->
@@ -116,36 +119,25 @@
           <p>Our team consists of seasoned software engineers, system architects, UI/UX designers, and IT specialists who share a passion for innovation and excellence. We don't just implement technology — we engineer experiences that drive growth.</p>
           <p>From startups to established enterprises, educational institutions to retail businesses across Ghana, we've helped hundreds of clients transform their digital operations with precision and care.</p>
         </div>
-      <div class="about-visual animate-on-scroll">
-  <div class="about-visual-icon">
-    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <!-- Center Node -->
-      <circle cx="32" cy="32" r="6" fill="currentColor" opacity="0.9"/>
-      <!-- Connection Lines -->
-      <path d="M32 8v12M32 44v12M8 32h12M44 32h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      <!-- Outer Nodes -->
-      <circle cx="32" cy="8" r="3" stroke="currentColor" stroke-width="2"/>
-      <circle cx="32" cy="56" r="3" stroke="currentColor" stroke-width="2"/>
-      <circle cx="8" cy="32" r="3" stroke="currentColor" stroke-width="2"/>
-      <circle cx="56" cy="32" r="3" stroke="currentColor" stroke-width="2"/>
-      <!-- Orbital Rings -->
-      <circle cx="32" cy="32" r="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"/>
-      <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="1" opacity="0.3"/>
-    </svg>
-  </div>
-  <h3>Innovation First</h3>
-  <p>Building tomorrow's tech, today, with AI, automation, and cutting-edge architecture designed for African markets.</p>
-</div>
+
+        <!-- ✅ FIXED: No more duplicate content -->
+        <div class="about-visual animate-on-scroll">
+          <div class="about-visual-image">
+            <img src="images/AI.jpg" alt="NKRAN Digital Hub Tech Team - Innovation and Technology" loading="lazy">
+          </div>
+          <h3>Innovation First</h3>
+          <p>Building tomorrow's tech, today, with AI, automation, and cutting-edge architecture designed for African markets.</p>
+        </div>
       </div>
 
       <!-- Mission & Vision -->
       <div class="mission-vision">
         <div class="mv-card animate-on-scroll">
-          <h3>🎯 Our Mission</h3>
+          <h3>Our Mission</h3>
           <p>To deliver intelligent, accessible, and secure digital solutions that simplify operations, boost productivity, and unlock new opportunities for businesses and individuals across Africa.</p>
         </div>
         <div class="mv-card animate-on-scroll">
-          <h3>🔭 Our Vision</h3>
+          <h3>Our Vision</h3>
           <p>To become the leading digital transformation partner in West Africa, recognized for reliability, cutting-edge technology, and customer-centric innovation that drives real impact.</p>
         </div>
       </div>
@@ -159,22 +151,22 @@
       </div>
       <div class="features-grid">
         <div class="feature-card animate-on-scroll">
-          <span class="feature-icon">⚡</span>
+          <span class="feature-icon"></span>
           <h4>Expert Team</h4>
           <p>Seasoned developers, engineers, and IT specialists with 10+ years of industry experience and AWS-certified expertise.</p>
         </div>
         <div class="feature-card animate-on-scroll">
-          <span class="feature-icon">🎯</span>
+          <span class="feature-icon"></span>
           <h4>Tailored Solutions</h4>
           <p>No one-size-fits-all. Everything is customized to your unique goals, workflow, and growth trajectory.</p>
         </div>
         <div class="feature-card animate-on-scroll">
-          <span class="feature-icon">🚀</span>
+          <span class="feature-icon"></span>
           <h4>Fast Delivery</h4>
           <p>Agile workflows and modern DevOps ensure rapid deployment without compromising quality or security.</p>
         </div>
         <div class="feature-card animate-on-scroll">
-          <span class="feature-icon">🤝</span>
+          <span class="feature-icon"></span>
           <h4>Ongoing Support</h4>
           <p>Lifetime maintenance, real-time monitoring, and 24/7 technical assistance to keep you moving forward.</p>
         </div>
@@ -200,7 +192,7 @@
           <span class="role">TECHNICAL ANALYST</span>
           <p>Technical Analyst specializing in system architecture review, data-driven optimization, and translating business requirements into secure, scalable tech solutions.</p>
         </div>
-
+      </div>
     </section>
 
     <!-- Stats Counter -->
@@ -211,8 +203,6 @@
       </div>
       <div class="stats-grid">
         <div class="stat-item animate-on-scroll">
-
-
         </div>
         <div class="stat-item animate-on-scroll">
           <span class="stat-number" data-target="98">0</span>
@@ -222,7 +212,6 @@
           <span class="stat-number" data-target="24">0</span>
           <span class="stat-label">/7 Support</span>
         </div>
-
       </div>
     </section>
 
@@ -233,132 +222,90 @@
       <a href="contact.html" class="btn btn-primary">Start Your Journey</a>
     </section>
   </main>
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-grid">
 
-    <!-- Column 1: Brand + Social -->
-    <div class="footer-col">
-      <div class="footer-brand">
-        <img src="images/mkranDigilogo.png" alt="NKRAN Logo" width="50" height="50">
-        <h4>NKRAN DIGITAL HUB</h4>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <!-- Column 1: Brand + Social -->
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="images/mkranDigilogo.png" alt="NKRAN Logo" width="50" height="50">
+          <h4>NKRAN DIGITAL HUB</h4>
+        </div>
+        <p>Empowering businesses and individuals with next-generation digital solutions that drive growth, efficiency, and innovation across Ghana.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://web.facebook.com/profile.php?id=61589945770443" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+        </div>
       </div>
-      <p>Empowering businesses and individuals with next-generation digital solutions that drive growth, efficiency, and innovation across Ghana.</p>
-      <div class="social-links">
-        <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-          </svg>
-        </a>
-        <a href="https://web.facebook.com/profile.php?id=61589945770443" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-          </svg>
-        </a>
-        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-          </svg>
-        </a>
-        <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-          </svg>
-        </a>
-      </div>
-    </div> <!-- ✅ FIXED: Closing div for first column -->
 
-    <!-- Column 2: Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="contact-list">
+          <li>
+            <span class="icon">📍</span>
+            <span class="text">Tema, Ghana</span>
+          </li>
+          <li>
+            <span class="icon">📧</span>
+            <a href="mailto:info@nkrandigitalhub.com" class="text">info@nkrandigitalhub.com</a>
+          </li>
+          <li>
+            <span class="icon">📞</span>
+            <div class="text">
+              <a href="tel:+233245317741">+233 24 531 7741</a><br>
+              <a href="tel:+233542666327">+233 54 266 6327</a><br>
+              <a href="tel:+233500704988">+233 50 070 4988</a>
+            </div>
+          </li>
+          <li>
+            <span class="icon">🕒</span>
+            <span class="text">Mon - Sat: 9AM - 6PM</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Column 3: Contact Info -->
-    <div class="footer-col">
-      <h4>Contact Info</h4>
-      <ul class="contact-list">
-        <li>
-          <span class="icon">📍</span>
-          <span class="text">Tema, Ghana</span>
-        </li>
-        <li>
-          <span class="icon">📧</span>
-          <a href="mailto:info@nkrandigitalhub.com" class="text">info@nkrandigitalhub.com</a>
-        </li>
-        <li>
-          <span class="icon">📞</span>
-          <div class="text">
-            <a href="tel:+233245317741">+233 24 531 7741</a><br>
-            <a href="tel:+233542666327">+233 54 266 6327</a><br>
-            <a href="tel:+233500704988">+233 50 070 4988</a>
-          </div>
-        </li>
-        <li>
-          <span class="icon">🕒</span>
-          <span class="text">Mon - Sat: 9AM - 6PM</span>
-        </li>
-      </ul>
-    </div>
-
-  </div> <!-- ✅ .footer-grid closes here -->
-
-  <!-- ✅ Copyright BELOW the grid, properly centered -->
-  <div class="copyright">&copy; <span id="year">2026</span> NKRAN DIGITAL HUB. All rights reserved.</div>
-</footer>
+    <!-- Copyright -->
+    <div class="copyright">&copy; <span id="year">2026</span> NKRAN DIGITAL HUB. All rights reserved.</div>
+  </footer>
 
   <!-- WhatsApp Float Button -->
-<!-- WhatsApp Float Button -->
-<a href="https://wa.me/233245317741" target="_blank" class="whatsapp-float">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-</a>
+  <a href="https://wa.me/233245317741" target="_blank" class="whatsapp-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
 
-  <!-- Scripts -->
-  <script src="js/particles.min.js"></script>
+  <!-- ✅ External Scripts - Correct order, NO duplicate particles.js -->
   <script src="js/about.js"></script>
-
-  <!-- Inline critical JS for loader & year -->
-  <script>
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Hide loader after page load
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.getElementById('loader').classList.add('hidden');
-      }, 1800);
-    });
-
-    // Mobile menu toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
-
-    if (menuToggle) {
-      menuToggle.addEventListener('click', () => {
-        const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
-        menuToggle.setAttribute('aria-expanded', !expanded);
-        menuToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
-      });
-    }
-
-    // Close menu when clicking a link (mobile)
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        if (navMenu.classList.contains('active')) {
-          menuToggle.classList.remove('active');
-          navMenu.classList.remove('active');
-          menuToggle.setAttribute('aria-expanded', 'false');
-          document.body.style.overflow = '';
-        }
-      });
-    });
-  </script>
 </body>
 </html>

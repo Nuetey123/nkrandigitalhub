@@ -455,6 +455,73 @@ textarea.form-control {
   font-size: 0.95rem;
 }
 
+/* ===== SELECT DROPDOWN STYLES ===== */
+.form-group.floating select.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  padding-right: 3rem;
+  background: transparent;
+}
+
+.form-group.floating select.form-control option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.form-group.floating select.form-control option:hover {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+}
+
+/* Custom dropdown arrow */
+.select-arrow {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent-cyan);
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: var(--transition-smooth);
+  z-index: 2;
+}
+
+.form-group.floating select.form-control:focus ~ .select-arrow {
+  color: var(--accent-green);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Ensure select has same styling as inputs */
+.form-group.floating select.form-control:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 15px var(--accent-cyan-glow);
+}
+
+.form-group.floating select.form-control:focus ~ label,
+.form-group.floating select.form-control:valid ~ label {
+  top: -0.5rem;
+  left: 1rem;
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+  background: var(--bg-secondary);
+  padding: 0 0.5rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .form-group.floating select.form-control {
+    font-size: 1rem;
+  }
+
+  .select-arrow {
+    right: 1rem;
+  }
+}
+
 /* ===== 10. MAP SECTION ===== */
 .map-container {
   margin-top: 2rem;

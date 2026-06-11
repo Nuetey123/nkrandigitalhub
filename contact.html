@@ -182,14 +182,29 @@
             </div>
 
             <div class="form-group floating">
-              <input type="text" id="subject" name="subject" class="form-control" placeholder=" " required>
-              <label for="subject">Subject</label>
-            </div>
+  <input type="text" id="subject" name="subject" class="form-control" placeholder=" " required>
+  <label for="subject">Subject</label>
+</div>
 
-            <div class="form-group floating">
-              <textarea id="message" name="message" class="form-control" placeholder=" " rows="5" required></textarea>
-              <label for="message">Your Message</label>
-            </div>
+      <div class="form-group floating">
+        <select id="service" name="service" class="form-control" required>
+          <option value="" disabled selected hidden></option>
+          <option value="ai-automation">AI & Process Automation</option>
+          <option value="business-software">Business & School Software</option>
+          <option value="web-development">Website Design & Development</option>
+          <option value="laptop-sales">Laptop Sales & Accessories</option>
+          <option value="phone-repairs">Phone Sales & Repairs</option>
+          <option value="it-support">IT Support & Digital Setup</option>
+          <option value="other">Other / General Inquiry</option>
+        </select>
+        <label for="service">Service of Interest</label>
+        <span class="select-arrow">▼</span>
+      </div>
+
+      <div class="form-group floating">
+        <textarea id="message" name="message" class="form-control" placeholder=" " rows="5" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
 
             <button type="submit" class="btn btn-primary" id="submitBtn">
               <span class="btn-text">Send Message</span>
